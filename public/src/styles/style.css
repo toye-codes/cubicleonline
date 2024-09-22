@@ -5,3 +5,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #cceeff;
+}
+
+.main {
+    background-color: #ffffff; 
+    width: 100%; /* Ensure the div covers the full width of the container */
+    padding: 20px; 
+    box-sizing: border-box; 
+    margin: 50px 30px 50px 30px;
+}
