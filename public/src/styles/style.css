@@ -7,7 +7,7 @@
 
 body{
     background-color: #cceeff;
-    padding: 20px;
+    padding: 30px;
 }
 
 .main {
@@ -130,23 +130,296 @@ body{
 
 .slot-1{
     display: inline;
-    padding: 20px;
+    padding: 5px;
     border: none;
+    width: 50%;
 }
 
 .card-1 {
     background-image: url("https://i.ibb.co/dGqrXPN/coffee.png");
     background-size: cover; /* Ensures the image covers the entire card */
-    background-position: center; /* Centers the image in the card */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; 
+    background-repeat: no-repeat; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow like in the example */
-    padding: 20px; /* Padding inside the card */
-    color: white; /* For text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    color: white; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 300px; /* You can adjust this based on the design */
-    height: 200px; /* Adjust the height as needed */
+    justify-content: left;
+    height: 250px;
+    width: 100%;
+    text-align: left;
 }
+
+.card-info p{
+    color: #ffffff;
+    font-size: small;
+    margin-bottom: 8px;
+}
+
+.price {
+    text-align: left;
+    margin-top: 120px;
+    border: thin;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #804000;
+    padding: 15px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.price:hover{
+    background-color: #804000;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.flex-tab{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-2{
+    background-image: url("https://i.ibb.co/vY2VkDc/fruits.png");
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    color: white; 
+    width: 45%;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.card-2 .price {
+    text-align: left;
+    margin-top: 180px;
+    border: thin;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #cc7a00;
+    padding: 15px;
+    margin-left: 5px;
+    width: 60%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.card-2 .price:hover{
+    background-color: #cc7a00;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.card-3{
+    background-image: url("https://i.ibb.co/v1qBpxR/sugar-detox.png");
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    color: white; 
+    width: 45%;
+    height: 350px;
+}
+
+.card-3 .price {
+    text-align: left;
+    margin-top: 200px;
+    border: thin;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #cc7a00;
+    padding: 15px;
+    width: 60%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.card-3 .price:hover{
+    background-color: #cc7a00;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+
+/* Designing the second slot */
+
+.slot-2{
+    display: inline;
+    margin-top: -15px;
+    border: none;
+    margin-left: px;
+}
+
+.flex-tab-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-4{
+    background-image: url("https://i.ibb.co/sCBwZ45/NASA-building.png");
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    color: white; 
+    width: 45%;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.card-4 .price {
+    text-align: left;
+    margin-top: 180px;
+    border: thin;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #5c5c8a;
+    padding: 15px;
+    margin-left: 5px;
+    width: 60%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.card-4 .price:hover{
+    background-color: #5c5c8a;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.card-5{
+    background-image: url("https://i.ibb.co/MZX4Ys9/sahara-sand.png");
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    color: white; 
+    width: 45%;
+    height: 350px;
+}
+
+.card-5 .price {
+    text-align: left;
+    margin-top: 180px;
+    border: thin;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #ff9933;
+    padding: 15px;
+    width: 60%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.card-5 .price:hover{
+    background-color: #ff9933;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+
+.card-6 {
+    background-image: url("https://i.ibb.co/10s9TfY/instagram.png");
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 250px;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.card-6 .price {
+    text-align: left;
+    margin-top: 120px;
+    border: thin;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #476b6b;
+    padding: 15px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.price:hover{
+    background-color: #476b6b;
+    color: #c2c2a3;
+    opacity: 0.8;
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Main container adjustments */
+    .main {
+        padding: 20px; /* Reduce padding */
+        margin-top: 20px;
+    }
+
+    /* Content cards adjustments */
+    .content-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center-align the cards */
+    }
+
+    .content-info h3 {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .content-info p {
+        font-size: 18px; /* Adjust text size */
+        width: 100%; /* Full width on small screens */
+    }
+
+    /* Slot-1 Cards */
+    .slot-1 {
+        width: 100%; /* Make slot full width */
+    }
+
+    .card-1, .card-6 {
+        height: 200px; /* Reduce height */
+    }
+
+    .price {
+        width: 50%; /* Adjust button width */
+    }
+
+    /* Flex Tabs and Slot-2 Adjustments */
+    .flex-tab, .flex-tab-2 {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .card-2, .card-3, .card-4, .card-5 {
+        width: 100%; /* Full width for cards */
+        margin-right: 0; /* Remove right margin */
+        height: 250px; /* Adjust height */
+    }
+
+    .card-2 .price, .card-3 .price, .card-4 .price, .card-5 .price {
+        width: 50%; /* Adjust button width */
+    }
+}
+
 
