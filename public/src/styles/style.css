@@ -34,6 +34,11 @@ body{
     margin-bottom: 50px;
 }
 
+.nav-bar img{
+    display: none;
+}
+
+
 .logo{
     margin-top: -10px;
     flex: 1; /* Allows it to scale as needed */
@@ -80,12 +85,49 @@ body{
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     .nav-header {
+        display: inline-block;
         flex-direction: column; /* Stack elements vertically on small screens */
         align-items: center;
+        padding: 10px;
     }
 
-    .logo {
-        margin-bottom: 20px; /* Add spacing below the logo */
+    .nav-container li{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+        position: absolute;
+        
+    }
+
+    .nav-bar img{
+        display: block;
+        height: 30px;
+        cursor: pointer;
+        margin-left: 90vh;
+        margin-top: -45px;
+    }
+
+    .nav-bar img:hover{
+      height: 10px;
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.5s ease; /* Transition for the rotation */
+    }
+    
+    /* Rotate class to be added on click */
+    .rotate {
+      transform: rotate(180deg); /* Rotates the navbar 180 degrees */
+    }
+    
+
+    .logo img{
+        display: block;
+        margin-top: 8px;
+        padding-top: 10px;
     }
 
     .nav-container {
@@ -93,13 +135,8 @@ body{
         text-align: center;
     }
 
-    .nav-container li {
-        padding: 10px;
-        font-size: 18px;
-    }
-
     .profile img {
-        width: 60px; /* Reduce the profile image size on small screens */
+       display: none;    
     }
 }
 
@@ -243,7 +280,7 @@ body{
 }
 
 .card-3 .price:hover{
-    background-color: #cc7a00;
+    background-color: #754b0b;
     color: #ffffff;
     opacity: 0.8;
 }
@@ -361,7 +398,7 @@ body{
     cursor: pointer;
 }
 
-.price:hover{
+.card-6 .price:hover{
     background-color: #476b6b;
     color: #c2c2a3;
     opacity: 0.8;
@@ -369,57 +406,130 @@ body{
 
 
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-
-    /* Main container adjustments */
+/* Small Mobile Devices: 320px - 480px */
+@media (max-width: 480px) {
     .main {
-        padding: 20px; /* Reduce padding */
+        padding: 20px;
         margin-top: 20px;
     }
 
-    /* Content cards adjustments */
-    .content-cards {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
-        align-items: center; /* Center-align the cards */
+    .nav-header{
+        display: inline;
+        width: 100%;
+    }
+
+    .nav-container li {
+        display: none;
+    }
+
+    .nav-bar img {
+        display: block;
+        height: 30px;
+        margin-left: auto;
+    }
+
+    .profile img {
+        display: none;
     }
 
     .content-info h3 {
-        font-size: 30px; /* Reduce font size */
+        font-size: 24px;
     }
 
     .content-info p {
-        font-size: 18px; /* Adjust text size */
-        width: 100%; /* Full width on small screens */
+        font-size: 14px;
+        width: 100%;
     }
 
-    /* Slot-1 Cards */
-    .slot-1 {
-        width: 100%; /* Make slot full width */
+    .content-cards{
+        width: 100%;
+        display: block;
+        padding: 5px;
     }
-
-    .card-1, .card-6 {
-        height: 200px; /* Reduce height */
-    }
-
-    .price {
-        width: 50%; /* Adjust button width */
-    }
-
-    /* Flex Tabs and Slot-2 Adjustments */
-    .flex-tab, .flex-tab-2 {
-        flex-direction: column; /* Stack elements vertically */
-    }
-
-    .card-2, .card-3, .card-4, .card-5 {
-        width: 100%; /* Full width for cards */
-        margin-right: 0; /* Remove right margin */
-        height: 250px; /* Adjust height */
-    }
-
-    .card-2 .price, .card-3 .price, .card-4 .price, .card-5 .price {
-        width: 50%; /* Adjust button width */
-    }
+   
 }
 
+/* Medium Mobile Devices: 481px - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .nav-header{
+        display: inline;
+
+    }
+
+    .nav-container li {
+        display: none;
+    }
+
+    .nav-bar img {
+        display: block;
+        height: 30px;
+        margin-left: auto;
+    }
+
+    .profile img {
+        display: none;
+    }
+
+    .content-info h3 {
+        font-size: 24px;
+    }
+
+    .content-info p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .card-2 .price {
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .content-cards{
+        display: block;
+        width: 100%;
+    }
+
+    .price, .card-3 .price, .card-4 .price, .card-5 .price, .card-6 .price{
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+/* Tablets: 769px - 1024px */
+@media (min-width: 769px) and (max-width: 2024px) {
+    .nav-container {
+        margin-left: 0;
+    }
+
+    .nav-container li {
+        font-size: 18px;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content-info h3 {
+        font-size: 32px;
+    }
+
+    .content-info p {
+        font-size: 18px;
+    }
+
+    .content-cards{
+        display: block;
+        width: 100%;
+    }
+}
 
