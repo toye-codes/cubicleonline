@@ -7,7 +7,7 @@
 
 body{
     background-color: #cceeff;
-    padding: 30px;
+    padding: 10px;
 }
 
 .main {
@@ -17,7 +17,7 @@ body{
     border-radius: 10px;
     align-content: center;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 20px;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 }
 
